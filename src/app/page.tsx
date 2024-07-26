@@ -35,7 +35,7 @@ export default function Home() {
             <div className="basis-2/3">
               <div className="text-start">
                 <h2 className="pb-1 text-4xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl my-4">
-                  Chinthana Prabhashitha
+                  Chinthana Rajapaksha
                 </h2>
                 <h3 className="text-lg dark:text-white md:text-2xl my-4">
                   <TypeAnimation
