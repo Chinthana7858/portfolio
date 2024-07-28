@@ -4,7 +4,7 @@ import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useGlobalState } from "@/app/context/GlobalStateContext";
 const Navbar = () => {
-  const { number, setNumber, dark, setDark } = useGlobalState();
+  const { number, setNumber } = useGlobalState();
   return (
     <>
       <div className="h-10 sticky top-0 flex w-screen bg-transparent ">
@@ -18,8 +18,8 @@ const Navbar = () => {
             <div
               className={`p-2 cursor-pointer rounded-full text-center mx-1 ${
                 number === 0
-                  ? "bg-teal-200 dark:bg-teal-600"
-                  : "hover:bg-teal-200 dark:hover:bg-teal-600"
+                  ? "bg-teal-200 "
+                  : "bg-teal-200 "
               }`}
               onClick={() => {
                 setNumber(0);
@@ -36,8 +36,8 @@ const Navbar = () => {
           <div
               className={`p-2 cursor-pointer rounded-full text-center mx-1 ${
                 number === 1
-                  ? "bg-teal-200 dark:bg-teal-600"
-                  : "hover:bg-teal-200 dark:hover:bg-teal-600"
+                  ? "bg-teal-200 "
+                  : "bg-teal-200 "
               }`}
               onClick={() => {
                 setNumber(1);
@@ -52,8 +52,8 @@ const Navbar = () => {
           <div
               className={`p-2 cursor-pointer rounded-full text-center mx-1 ${
                 number === 2
-                  ? "bg-teal-200 dark:bg-teal-600"
-                  : "hover:bg-teal-200 dark:hover:bg-teal-600"
+                  ? "bg-teal-200 "
+                  : "bg-teal-200 "
               }`}
               onClick={() => {
                 setNumber(2);
@@ -68,8 +68,8 @@ const Navbar = () => {
           <div
               className={`p-2 cursor-pointer rounded-full text-center mx-1 ${
                 number === 3
-                  ? "bg-teal-200 dark:bg-teal-600"
-                  : "hover:bg-teal-200 dark:hover:bg-teal-600"
+                  ? "bg-teal-200 "
+                  : "bg-teal-200 "
               }`}
               onClick={() => {
                 setNumber(3);
