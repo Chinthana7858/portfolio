@@ -9,9 +9,9 @@ const Navbar = () => {
     <>
       <div className="h-10 sticky top-0 flex w-screen bg-transparent ">
         <div className=" basis-1/12">
-          <div className=" py-2 ">
+          {/* <div className=" py-2 ">
             <BsFillMoonStarsFill className="text-2xl cursor-pointer " onClick={()=>{setDark(!dark)}} />
-          </div>{" "}
+          </div>{" "} */}
         </div>
         <div className=" basis-auto">
           <Link href="/">
@@ -23,6 +23,7 @@ const Navbar = () => {
               }`}
               onClick={() => {
                 setNumber(0);
+                console.log(number);
               }}
             >
               {" "}
