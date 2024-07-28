@@ -15,12 +15,22 @@ const Navbar = () => {
         </div>
         <div className=" basis-auto">
           <Link href="/">
-            <div
+            {/* <div
               className={`p-2 cursor-pointer rounded-full text-center mx-1 ${
                 number === 0
                   ? "bg-teal-200 "
                   : "bg-teal-200 "
               }`}
+              onClick={() => {
+                setNumber(0);
+                console.log(number);
+              }}
+            >
+              {" "}
+              Home
+            </div>{" "} */}
+            <div
+              className="p-2 cursor-pointer rounded-full text-center mx-1 bg-teal-200"
               onClick={() => {
                 setNumber(0);
                 console.log(number);
