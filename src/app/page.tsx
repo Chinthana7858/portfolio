@@ -8,7 +8,7 @@ import {
   AiFillYoutube,
   AiFillGithub,
 } from "react-icons/ai";
-import Navbar from "@/components/navigationBar";
+import Navbar from "@/Components/navigationBar";
 import { TypeAnimation } from "react-type-animation";
 import { useGlobalState } from "./context/GlobalStateContext";
 

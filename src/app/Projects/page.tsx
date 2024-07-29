@@ -1,5 +1,5 @@
 "use client";
-import Navbar from '@/components/navigationBar'
+import Navbar from '@/Components/navigationBar'
 import Head from 'next/head';
 import React from 'react'
 import { useGlobalState } from '../context/GlobalStateContext';
