@@ -4,22 +4,26 @@ import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useGlobalState } from "@/app/context/GlobalStateContext";
 const Navbar = () => {
-  const { number, setNumber } = useGlobalState();
+  const { number, setNumber, dark, setDark } = useGlobalState();
   return (
     <>
-      <div className="h-10 sticky top-0 flex w-screen bg-transparent ">
+      <div className="h-10 sticky top-0 flex w-screen bg-transparent">
         <div className=" basis-1/12">
-          {/* <div className=" py-2 ">
-            <BsFillMoonStarsFill className="text-2xl cursor-pointer " onClick={()=>{setDark(!dark)}} />
-          </div>{" "} */}
+          <div className=" py-2 ">
+            <BsFillMoonStarsFill
+              className="text-2xl cursor-pointer "
+              onClick={() => {
+                setDark(!dark);
+              }}
+            />
+            {dark?"Dark":"Light"}
+          </div>{" "}
         </div>
         <div className=" basis-auto">
           <Link href="/">
-            {/* <div
+            <div
               className={`p-2 cursor-pointer rounded-full text-center mx-1 ${
-                number === 0
-                  ? "bg-teal-200 "
-                  : "bg-teal-200 "
+                number === 0 ? "bg-teal-500 " : " hover:bg-teal-500  "
               }`}
               onClick={() => {
                 setNumber(0);
@@ -27,65 +31,74 @@ const Navbar = () => {
               }}
             >
               {" "}
-              Home
-            </div>{" "} */}
-            <div
-              className="p-2 cursor-pointer rounded-full text-center mx-1 bg-teal-200"
-              onClick={() => {
-                setNumber(0);
-                console.log(number);
-              }}
-            >
-              {" "}
-              Home
+              <div
+                className={` ${
+                  number === 0 ? " text-white" : ""
+                } hover:text-white`}
+              >
+                Home
+              </div>
             </div>{" "}
           </Link>
         </div>
         <div className=" basis-auto">
           <Link href="/About">
-          <div
+            <div
               className={`p-2 cursor-pointer rounded-full text-center mx-1 ${
-                number === 1
-                  ? "bg-teal-200 "
-                  : "bg-teal-200 "
+                number === 1 ? "bg-teal-500  " : "hover:bg-teal-500  "
               }`}
               onClick={() => {
                 setNumber(1);
               }}
             >
-              About
+              <div
+                className={` ${
+                  number === 1 ? " text-white" : ""
+                } hover:text-white`}
+              >
+                About
+              </div>
             </div>{" "}
           </Link>
         </div>
         <div className=" basis-auto">
           <Link href="/Projects">
-          <div
+            <div
               className={`p-2 cursor-pointer rounded-full text-center mx-1 ${
-                number === 2
-                  ? "bg-teal-200 "
-                  : "bg-teal-200 "
+                number === 2 ? "bg-teal-500 " : "hover:bg-teal-500 "
               }`}
               onClick={() => {
                 setNumber(2);
               }}
             >
-              Projects
+              <div
+                className={` ${
+                  number === 2 ? " text-white" : ""
+                } hover:text-white`}
+              >
+                {" "}
+                Projects
+              </div>
             </div>
           </Link>
         </div>
         <div className=" basis-auto">
           <Link href="/Contact">
-          <div
+            <div
               className={`p-2 cursor-pointer rounded-full text-center mx-1 ${
-                number === 3
-                  ? "bg-teal-200 "
-                  : "bg-teal-200 "
+                number === 3 ? "bg-teal-500" : "hover:bg-teal-500"
               }`}
               onClick={() => {
                 setNumber(3);
               }}
             >
-              Contact
+              <div
+                className={` ${
+                  number === 3 ? " text-white" : ""
+                } hover:text-white`}
+              >
+                Contact
+              </div>
             </div>
           </Link>
         </div>
