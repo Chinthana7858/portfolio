@@ -54,7 +54,7 @@ export default function Home() {
                     style={{ fontSize: "2em" }}
                   />
                 </h3>
-                <p className={`max-w-xl leading-8 text-gray-800 text-md md:text-xl text-justify ${dark?"text-white ":"text-gray-700"}`}>
+                <p className={`max-w-xl leading-8 text-gray-800 text-md md:text-xl text-justify ${dark?"text-white ":"bg-white"}`}>
                   I am an enthusiastic undergraduate with a passion for solving
                   complex problems using an engineering approach. My ability to
                   quickly adapt to new technologies allows me to leverage my
@@ -84,7 +84,7 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 200, damping: 20 }}
                 className="basis-1/3"
               >
-               <img src="/static/images/Portrait.png" alt="Portrait" className="" />
+                <img src="/Portrait.png" alt="Portrait" className="" />
               </motion.div>
             )}
           </div>
