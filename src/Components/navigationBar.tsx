@@ -16,7 +16,7 @@ const Navbar = () => {
                 setDark(!dark);
               }}
             />
-            {dark?"Dark":"Light"}
+            {/* {dark?"Dark":"Light"} */}
           </div>{" "}
         </div>
         <div className=" basis-auto">
