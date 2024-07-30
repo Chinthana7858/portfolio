@@ -5,7 +5,7 @@ import Head from 'next/head';
 import React from 'react';
 import { useGlobalState } from '../context/GlobalStateContext';
 import { FaJsSquare, FaReact, FaCss3Alt, FaHtml5, FaNodeJs, FaJava } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss, SiSpringboot, SiNextdotjs, SiFlutter, SiJavascript, SiMysql, SiMongodb, SiFirebase, SiDart, SiGithub, SiPostman, SiFigma, SiAdobephotoshop, SiBlender, SiCanva } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiSpringboot, SiNextdotjs, SiFlutter, SiJavascript, SiMysql, SiMongodb, SiFirebase, SiDart, SiGithub, SiPostman, SiFigma, SiAdobephotoshop, SiBlender, SiCanva, SiNetlify, SiVercel } from 'react-icons/si';
 import { RiSoundcloudLine } from 'react-icons/ri';
 
 
@@ -42,6 +42,8 @@ const toolbox = [
   { name: 'Github', icon: SiGithub},
   { name: 'Postman', icon: SiPostman },
   { name: 'Figma', icon: SiFigma },
+  { name: 'Netlify', icon: SiNetlify},
+  { name: 'Vercel', icon: SiVercel},
   { name: 'Adobe Photoshop', icon: SiAdobephotoshop },
   { name: 'Blender', icon: SiBlender },
   { name: 'Canva', icon: SiCanva },
