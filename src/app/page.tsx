@@ -84,7 +84,7 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 200, damping: 20 }}
                 className="basis-1/3"
               >
-                <img src="/Portrait.png" alt="Portrait" className="" />
+                <img src="https://i.imgur.com/oOBh1qs.png" alt="Portrait" className="" />
               </motion.div>
             )}
           </div>
