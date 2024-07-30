@@ -24,9 +24,6 @@ export default function ContactPage() {
               <h2 className="pb-1 text-4xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl">
                 Contact
               </h2>
-              <h3 className="text-2xl dark:text-white md:text-3xl">
-                Software Engineer.
-              </h3>
               <p className={`max-w-xl leading-8 text-md md:text-xl  ${dark?"text-white":"text-gray-700"}`}>
                 I am an enthusiastic undergraduate who loves to solve problems
                 with an engineering approach. I can quickly adapt to new
