@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       title: "IT Gura",
       year: "2024",
       description: "Learning management system for an institute",
-      imageUrl: "/images/it-gura.jpg",
+      imageUrl: "https://i.imgur.com/68s6GbL.jpg",
       technologies: ["React","Typescript","Tailwind CSS"],
       role: "Front-End Developer"
     },
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
       title: "Mind Healer",
       year: "2024",
       description: "Mobile application for diagnosing patients’ mental disorders and providing solutions using artificial intelligence techniques",
-      imageUrl: "/images/mind-healer.jpg",
+      imageUrl: "https://i.imgur.com/crtLWRu.jpg",
       technologies: ["Flutter", "Firebase"],
       role: "Mobile App Developer"
     },
@@ -62,7 +62,7 @@ export default function ProjectsPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {projects.map((project, index) => (
                   <div key={index} className={`border rounded-lg p-5 ${dark ? "bg-gray-800" : "bg-gray-100"} shadow-lg`}>
-                    <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover rounded-lg mb-5" />
+                    <img src={project.imageUrl} alt={project.title} className="w-full h-96 object-cover rounded-lg mb-5" />
                     <h3 className={`text-2xl font-semibold mb-2 ${dark ? "text-teal-400" : "text-teal-600"}`}>{project.title}</h3>
                     <p className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">{project.year}</p>
                     <p className={`text-base ${dark ? "text-gray-200" : "text-gray-700"}`}>{project.description}</p>
