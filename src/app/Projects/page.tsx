@@ -10,6 +10,22 @@ export default function ProjectsPage() {
   
   const projects = [
     {
+      title: "Monkey Bird Travels",
+      year: "2024",
+      description: "Website for a tourism company",
+      imageUrl: "https://i.imgur.com/DpxkFsf.jpg",
+      technologies: ["Next.js","Typescript", "Tailwind CSS", "EmailJs"],
+      role: "Front-End Developer"
+    },
+    {
+      title: "Virtual School",
+      year: "2023",
+      description: "LMS project for an education institute",
+      imageUrl: "https://i.imgur.com/Xuv7Lrp.png",
+      technologies: ["React","Springboot","Mongodb","AWS S3"],
+      role: "Full-Stack Developer / Team leader"
+    },
+    {
       title: "IT Gura",
       year: "2024",
       description: "Learning management system for an institute",
@@ -21,26 +37,11 @@ export default function ProjectsPage() {
       title: "Mind Healer",
       year: "2024",
       description: "Mobile application for diagnosing patients’ mental disorders and providing solutions using artificial intelligence techniques",
-      imageUrl: "https://i.imgur.com/crtLWRu.jpg",
+      imageUrl: "https://i.imgur.com/t7EiTjd.jpg",
       technologies: ["Flutter", "Firebase"],
       role: "Mobile App Developer"
     },
-    {
-      title: "Lak Dream Travel Destination",
-      year: "2024",
-      description: "Website for a tourism company",
-      imageUrl: "/images/lak-dream.jpg",
-      technologies: ["Next.js","Typescript", "Tailwind CSS"],
-      role: "Front-End Developer"
-    },
-    {
-      title: "Virtual School",
-      year: "2023",
-      description: "LMS project for an education institute",
-      imageUrl: "/images/virtual-school.jpg",
-      technologies: ["React","Springboot","Mongodb"],
-      role: "Full-Stack Developer / Team leader"
-    },
+    
   ];
 
   return (
@@ -50,7 +51,7 @@ export default function ProjectsPage() {
         <meta name="description" content="Projects page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`px-10 md:px-20 lg:px-40 ${dark ? "bg-gray-900" : "bg-white"}`}>
+      <main className={`px-10 md:px-20 lg:px-40 ${dark ? "bg-gray-900" : " bg-slate-200"}`}>
         <section className="min-h-screen">
           <nav className={`flex justify-between pt-10 mb-12 ${dark ? "text-white" : "text-gray-900"}`}>
             <Navbar />
@@ -62,7 +63,7 @@ export default function ProjectsPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {projects.map((project, index) => (
                   <div key={index} className={`border rounded-lg p-5 ${dark ? "bg-gray-800" : "bg-gray-100"} shadow-lg`}>
-                    <img src={project.imageUrl} alt={project.title} className="w-full h-96 object-cover rounded-lg mb-5" />
+                    <img src={project.imageUrl} alt={project.title} className="w-full xl:h-96 object-cover rounded-lg mb-5" />
                     <h3 className={`text-2xl font-semibold mb-2 ${dark ? "text-teal-400" : "text-teal-600"}`}>{project.title}</h3>
                     <p className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">{project.year}</p>
                     <p className={`text-base ${dark ? "text-gray-200" : "text-gray-700"}`}>{project.description}</p>

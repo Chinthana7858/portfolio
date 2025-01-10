@@ -15,7 +15,7 @@ const GlobalStateContext = createContext<GlobalStateContextType | undefined>(und
 // Create a provider component
 export const GlobalStateProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [number, setNumber] = useState(0);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
 
   return (
     <GlobalStateContext.Provider value={{ number, setNumber, dark, setDark }}>
