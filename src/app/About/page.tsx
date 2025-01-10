@@ -5,7 +5,7 @@ import Head from 'next/head';
 import React from 'react';
 import { useGlobalState } from '../context/GlobalStateContext';
 import { FaJsSquare, FaReact, FaCss3Alt, FaHtml5, FaNodeJs, FaJava } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss, SiSpringboot, SiNextdotjs, SiFlutter, SiJavascript, SiMysql, SiMongodb, SiFirebase, SiDart, SiGithub, SiPostman, SiFigma, SiAdobephotoshop, SiBlender, SiCanva, SiNetlify, SiVercel } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiSpringboot, SiNextdotjs, SiFlutter, SiJavascript, SiMysql, SiMongodb, SiFirebase, SiDart, SiGithub, SiPostman, SiFigma, SiAdobephotoshop, SiBlender, SiCanva, SiNetlify, SiVercel, SiScikitlearn, SiJupyter } from 'react-icons/si';
 import { RiSoundcloudLine } from 'react-icons/ri';
 
 
@@ -41,9 +41,11 @@ const programmingLanguagekills = [
 const toolbox = [
   { name: 'Github', icon: SiGithub},
   { name: 'Postman', icon: SiPostman },
-  { name: 'Figma', icon: SiFigma },
+  { name: 'scikit-learn', icon: SiScikitlearn },
+  { name: 'Jupyter', icon: SiJupyter },
   { name: 'Netlify', icon: SiNetlify},
   { name: 'Vercel', icon: SiVercel},
+  { name: 'Figma', icon: SiFigma },
   { name: 'Adobe Photoshop', icon: SiAdobephotoshop },
   { name: 'Blender', icon: SiBlender },
   { name: 'Canva', icon: SiCanva },
@@ -60,7 +62,7 @@ export default function AboutPage() {
         <meta name="description" content="About page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`px-10 md:px-20 lg:px-40 ${dark ? "bg-gray-900" : "bg-white"}`}>
+      <main className={`px-10 md:px-20 lg:px-40 ${dark ? "bg-gray-900" : " bg-slate-200"}`}>
         <section className="min-h-screen">
           <nav className={`flex justify-between pt-10 mb-12 ${dark ? "text-white" : "text-gray-900"}`}>
             <Navbar />
@@ -133,7 +135,8 @@ export default function AboutPage() {
               <div className="mb-8 ml-4">
                 <div className="absolute w-3 h-3 bg-teal-600 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-teal-400"></div>
                 <h4 className={`text-xl font-semibold ${dark ? "text-white" : "text-gray-900"}`}>Hasthiya IT</h4>
-                <p className={`${dark ? "text-white" : "text-gray-700"}`}>Software Engineer (Intern)</p>
+                <p className={`${dark ? "text-white" : "text-gray-700"}`}>Associate Software Engineer - 2024 June - Present</p>
+                <p className={`${dark ? "text-white" : "text-gray-700"}`}>Software Engineer (Intern) - 2024 January - June</p>
               </div>
               {/* Education */}
               <div className="mb-8 ml-4">
@@ -149,8 +152,8 @@ export default function AboutPage() {
                   Physical science stream<br />
                   Advanced level examination (2019)<br />
                   Combined Mathematics - A <br />
-                  Physics - B <br />
-                  Chemistry - B <br />
+                  Physics              - B <br />
+                  Chemistry            - B <br />
                 </p>
               </div>
 
