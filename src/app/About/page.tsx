@@ -135,7 +135,7 @@ export default function AboutPage() {
               <div className="mb-8 ml-4">
                 <div className="absolute w-3 h-3 bg-teal-600 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-teal-400"></div>
                 <h4 className={`text-xl font-semibold ${dark ? "text-white" : "text-gray-900"}`}>Hasthiya IT</h4>
-                <p className={`${dark ? "text-white" : "text-gray-700"}`}>Associate Software Engineer - 2024 June - Present</p>
+                <p className={`${dark ? "text-white" : "text-gray-700"}`}>Associate Software Engineer - 2024 June - January</p>
                 <p className={`${dark ? "text-white" : "text-gray-700"}`}>Software Engineer (Intern) - 2024 January - June</p>
               </div>
               {/* Education */}
