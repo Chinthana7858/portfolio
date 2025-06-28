@@ -10,6 +10,15 @@ export default function ProjectsPage() {
   
   const projects = [
     {
+      title: "Book Mart",
+      year: "2025",
+      description: " Web tracking and product recommendation system for an e-commerce platform. The system captures user interactions such as views, cart actions, and purchases—both for guests and registered users—to compute co-engagement metrics and generate product recommendations. Features include session-based activity tracking, a scoring algorithm for recommendations, and real-time product suggestion integration.",
+      imageUrl: "https://imgur.com/7KrYdQ5.jpg",
+      technologies: ["React.js","Fast API","My SQL","Typescript", "Tailwind CSS"],
+      role: "Full- Stack Developer",
+      url: "https://mybookmarket.netlify.app/" 
+    },
+    {
       title: "Monkey Bird Travels",
       year: "2024",
       description: " Developed a multi-page travel agency website designed to showcase comprehensive travel packages, destinations, and services, enhancing online visibility and user engagement. Integrated EmailJS to facilitate seamless user interactions, improving communication and booking inquiries.",
@@ -18,6 +27,7 @@ export default function ProjectsPage() {
       role: "Front-End Developer",
       url: "https://monkeybirdtravels.vercel.app/" 
     },
+
     {
       title: "Virtual School",
       year: "2023",

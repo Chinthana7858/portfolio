@@ -4,16 +4,17 @@ import Navbar from '@/Components/navigationBar';
 import Head from 'next/head';
 import React from 'react';
 import { useGlobalState } from '../context/GlobalStateContext';
-import { FaJsSquare, FaReact, FaCss3Alt, FaHtml5, FaNodeJs, FaJava } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss, SiSpringboot, SiNextdotjs, SiFlutter, SiJavascript, SiMysql, SiMongodb, SiFirebase, SiDart, SiGithub, SiPostman, SiFigma, SiAdobephotoshop, SiBlender, SiCanva, SiNetlify, SiVercel, SiScikitlearn, SiJupyter } from 'react-icons/si';
-import { RiSoundcloudLine } from 'react-icons/ri';
+import { FaJsSquare, FaReact, FaCss3Alt, FaHtml5, FaNodeJs, FaJava, FaPython } from 'react-icons/fa';
+import { SiTypescript, SiTailwindcss, SiSpringboot, SiNextdotjs, SiFlutter, SiJavascript, SiMysql, SiMongodb, SiFirebase, SiDart, SiGithub, SiPostman, SiFigma, SiAdobephotoshop, SiBlender, SiCanva, SiNetlify, SiVercel, SiScikitlearn, SiJupyter, SiFastapi } from 'react-icons/si';
+import { RiSoundcloudLine, RiVuejsFill } from 'react-icons/ri';
 
 
 
 const frontEndSkills = [
-  { name: 'Flutter', icon: SiFlutter },
   { name: 'React Js', icon: FaReact },
   { name: 'Next Js', icon: SiNextdotjs },
+  { name: 'Vue Js', icon: RiVuejsFill },
+  { name: 'Flutter', icon: SiFlutter },
   { name: 'Tailwind CSS', icon: SiTailwindcss },
   { name: 'HTML5', icon: FaHtml5 },
   { name: 'CSS3', icon: FaCss3Alt },
@@ -22,7 +23,7 @@ const frontEndSkills = [
 const backEndskills = [
 
   { name: 'Spring boot', icon: SiSpringboot },
-  { name: 'REST API', icon: RiSoundcloudLine }
+  { name: 'Fast API', icon: SiFastapi }
 ];
 
 const databaseskills = [
@@ -34,6 +35,7 @@ const databaseskills = [
 const programmingLanguagekills = [
   { name: 'Java', icon: FaJava },
   { name: 'JavaScript', icon: SiJavascript },
+  { name: 'Python', icon: FaPython },
   { name: 'TypeScript', icon: SiTypescript },
   { name: 'Dart', icon: SiDart},
 ];
