@@ -6,7 +6,10 @@ import { GlobalStateProvider } from "./context/GlobalStateContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Chinthana Prabhashitha",
+  title: {
+    default: "Chinthana Rajapaksha",
+    template: "%s | Chinthana Rajapaksha",
+  },
   description: "Portfolio website",
 };
 
